@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- Meta tags for SEO Purposes -->
+    <title>Mnemonic BIP Seed Phrase Checker</title>
+    <meta name="title" content="Seed Phrase Checker | Assist lost or forgotten phrase within the 12 word phrase" />
+    <meta name="description" content="This checker will not guarantee retrieving seed phrase. However if you forget or loose one word of 12 word phrase then it will be helpful in ascertaining the last word"/>
+    <meta name="keywords" content="seedphrase, BIP, mnemonic, lost seed"/>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="main-text">
+      <h1 class="title">Check if word is a BIP mnemonic seed phrase</h1>
+      <p class="description">
+        Enter a word to check if it is part of the 2 048 BIP word list.
+      </p>
+    </header>
+
+    <main>
+      <label class="word-label" for="word-input">Enter Word: </label>
+      <textarea
+        placeholder="Enter word here"
+        value=""
+        type="text"
+        name="word"
+        id="word-input"
+        rows="10"
+        cols="40"
+      ></textarea>
+      <button class="btn" id="check-word-btn" type="button">
+        Enter Word
+      </button>
+      <p id="result"></p>
+    </main>
+
+    <footer class="footer">&copy; BIP Mnemonic Checker</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
